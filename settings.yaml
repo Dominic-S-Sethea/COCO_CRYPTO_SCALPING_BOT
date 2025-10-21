@@ -1,0 +1,28 @@
+# TARGET_FILE: settings.yaml
+binance:
+  api_key: "wycYfuSX0sqrPRc83FlGRC2pl0xBl4V9SzR4zy9vAaWez49bIlTIwrlrAmqM2Mhl"
+  api_secret: "y0jMLfY9UwU515SVDUpyRgG5T0uzeiGZZPoqgjguOwCfnC9jH4VYEHJGRsFeXlcV"
+  testnet: true
+  base_url: "https://testnet.binance.vision"
+
+trading:
+  symbols: ["BTCUSDT", "ETHUSDT"]
+  quote_asset: "USDT"
+  max_active_positions: 1
+  position_size_pct: 1.0  # % of portfolio per trade (micro: 0.1–0.5)
+  stop_loss_pct: 0.15     # % below entry
+  take_profit_pct: 0.25   # % above entry
+  max_order_age_seconds: 30
+
+model:
+  path: "models/scalping_model.json"
+  required_features:
+    - price_change_1s
+    - price_change_5s
+    - volatility_10s
+    - volume_10s
+    - price_acceleration
+
+risk:
+  max_drawdown_pct: 5.0
+  daily_loss_limit_pct: 2.0
