@@ -1,7 +1,7 @@
 # TARGET_FILE: settings.yaml
 binance:
-  api_key: "wycYfuSX0sqrPRc83FlGRC2pl0xBl4V9SzR4zy9vAaWez49bIlTIwrlrAmqM2Mhl"
-  api_secret: "y0jMLfY9UwU515SVDUpyRgG5T0uzeiGZZPoqgjguOwCfnC9jH4VYEHJGRsFeXlcV"
+  api_key: "........................"
+  api_secret: "..............................."
   testnet: true
   base_url: "https://testnet.binance.vision"
 
